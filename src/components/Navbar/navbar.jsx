@@ -11,7 +11,7 @@ const Navbar = () => {
                 <button className="nav-btn">Courses</button>
                 <button className="nav-btn">About</button>
                 <button className="nav-btn">Mentors</button>
-                <button className="Login-Signup"><span>Join Now</span></button>
+                <button className="Login-Signup">Join Now</button>
             </div>
         </nav>
     )

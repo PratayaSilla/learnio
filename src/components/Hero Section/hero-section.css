@@ -2,11 +2,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 80px;
+    padding: 5rem 80px 0px 80px;
     background-color: #FFFBEB;
-    height: 100vh;
+    min-height: 100vh;
   }
-  
+  .left-div{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    /* top: 1rem; */
+    gap: 3rem;
+  }
 .welcome{
     color: #000;
     font-family: 'clash-display';
@@ -25,51 +31,6 @@
     font-family: 'clash-display';
 } 
 
-/* heavy hover button */
-.get-started {
-    padding: 0.1em 0.25em;
-    width: 13em;
-    height: 4.2em;
-    background-color: #212121;
-    border: 0.08em solid #fff;
-    border-radius: 0.3em;
-    font-size: 12px;
-    cursor: pointer;
-    font-family: 'clash-display';
-  }
-  
-  .get-started span {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0.4em;
-    width: 8.25em;
-    height: 2.5em;
-    background-color: #212121;
-    border-radius: 0.2em;
-    font-size: 1.5em;
-    color: #fff;
-    border: 0.08em solid #fff;
-    box-shadow: 0 0.4em 0.1em 0.019em #fff;
-  }
-  
-  .get-started span:hover {
-    transition: all 0.5s;
-    transform: translate(0, 0.4em);
-    box-shadow: 0 0 0 0 #fff;
-  }
-  
-  .get-started span:not(hover) {
-    transition: all 1s;
-  }
-  .get-started:active span {
-    transform: translate(0, 0.6em);
-    box-shadow: 0 0 0 0 #fff;
-  }
-
-/* heavy hover button */
-  
 .button-spacer{
     padding: 48px 52px;
 }
@@ -156,3 +117,44 @@
 /* heavy hover button */
 
 
+.scroll-to-explore {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'clash-display';
+    font-size: 20px;
+    color: black;
+}
+
+.get-started{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1em 0em 1em 1em;
+        background-color: yellow;
+        cursor: pointer;
+        box-shadow: 4px 6px 0px black;
+        border: 4px solid;
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+        z-index: 100;
+        transition: box-shadow 250ms, transform 250ms, filter 50ms;
+        font-family: 'clash-display';
+        width: 395px;
+        height: 99px;
+        font-size: 30px;
+        font-weight: 600;
+}
+.get-started:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 3px 0px black;
+  }
+  .get-started:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px black;
+}
