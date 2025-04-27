@@ -23,12 +23,20 @@
     align-items: center;
     font-size: 20px;
     height: 30px;
+
 }
 .logo{
     font-family: 'clash-display';
     font-weight: 600;
     font-size: 44.667px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5s;
 }
+.logo:hover{
+    color: #B782FC;
+}
+
 .nav-btn,.Login-Signup{
     font-family: 'clash-display';
 }
