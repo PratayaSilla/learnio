@@ -1,9 +1,10 @@
 
-
 @font-face {
     font-family: 'clash-display';
     src: url(../../assets/fonts/ClashDisplay-Variable.ttf);
 }
+
+
 
 .navbar {
     padding: 16px 32px;
@@ -11,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: #FFFBEB;
     border-radius: 12px;
 }
 .logo-container {
@@ -41,14 +42,47 @@
     color: black;
     text-decoration: none;
 }
-.Login-Signup{
-    font-size: 24px;
-    background: none;
-    border-radius: 14px;
-    padding: 8px 16px;
-    transition: all 0.2s;
-}
-.Login-Signup:hover{
-    color: white;
-    background-color: black;
-}
+
+
+
+
+.Login-Signup {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .Login-Signup span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+  
+  .Login-Signup span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+  }
+  
+  .Login-Signup span:not(hover) {
+    transition: all 1s;
+  }
+  .Login-Signup:active span {
+    transform: translate(0, 0.6em);
+    box-shadow: 0 0 0 0 #fff;
+  }

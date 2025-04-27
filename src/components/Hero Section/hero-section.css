@@ -1,0 +1,158 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    background-color: #FFFBEB;
+    height: 100vh;
+  }
+  
+.welcome{
+    color: #000;
+    font-family: 'clash-display';
+    font-weight: 500;
+    font-size: 48px;
+}
+.learnio{
+    color: #B782FC;
+    font-size: 48px;
+    font-weight: 600;
+}
+.tagline{
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'clash-display';
+} 
+
+/* heavy hover button */
+.get-started {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'clash-display';
+  }
+  
+  .get-started span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+  
+  .get-started span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+  }
+  
+  .get-started span:not(hover) {
+    transition: all 1s;
+  }
+  .get-started:active span {
+    transform: translate(0, 0.6em);
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+/* heavy hover button */
+  
+.button-spacer{
+    padding: 48px 52px;
+}
+.join-community-img{
+    height: 54px;
+    width: 116px;
+}
+.join-community{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+.last-tagline{
+    font-family: 'clash-display';
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.right-div-img{
+    height: 703px;
+    width: 559px;
+}
+
+
+/* heavy hover button */
+.button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    background-color: #000;
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color: #000;
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+  }
+
+/* heavy hover button */
+
+
