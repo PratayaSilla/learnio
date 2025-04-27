@@ -1,13 +1,9 @@
-@font-face {
-    font-family: 'PolySans-bulky';
-    src: url(../../assets/fonts/PolySans-Bulky.ttf);
-}
-@font-face {
-    font-family: 'PolySans-median';
-    src: url(../../assets/fonts/PolySans-Median.ttf);
-}
 
 
+@font-face {
+    font-family: 'clash-display';
+    src: url(../../assets/fonts/ClashDisplay-Variable.ttf);
+}
 
 .navbar {
     padding: 16px 32px;
@@ -16,9 +12,7 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: white;
-    border: 0.5px solid lightgreen;
     border-radius: 12px;
-    /* height: 10px; */
 }
 .logo-container {
     display: flex;
@@ -27,17 +21,20 @@
     height: 30px;
 }
 .logo{
-    font-family: 'PolySans-bulky';
+    font-family: 'clash-display';
+    font-weight: 600;
+    font-size: 44.667px;
 }
 .nav-btn,.Login-Signup{
-    font-family: 'PolySans-median';
+    font-family: 'clash-display';
 }
 .nav-buttons{
     display: flex;
-    gap: 10px;
+    gap: 40px;
 
 }
 .nav-btn,.nav-btn:hover{
+    font-size: 24px;
     background: none;
     border: none;
     cursor: pointer;
@@ -45,9 +42,11 @@
     text-decoration: none;
 }
 .Login-Signup{
+    font-size: 24px;
     background: none;
-    border-radius: 8px;
+    border-radius: 14px;
     padding: 8px 16px;
+    transition: all 0.2s;
 }
 .Login-Signup:hover{
     color: white;
