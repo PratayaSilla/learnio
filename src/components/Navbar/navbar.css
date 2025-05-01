@@ -14,7 +14,6 @@
     flex-wrap: wrap;
     background-color: #FFFBEB;
     border-bottom: 0.5px solid black;
-    position: fixed;
     top: 0;
     width: 100%;
 }
