@@ -1,6 +1,23 @@
 import React from "react";
 import './hero-section.css';
+import Card from "../Card/Card";
+import Blob from "../Blob/Blob";
 
+const card1 = {
+    img:"./youtube.jpg",
+    heading:"Best Handpicked Videos",
+    desc:"Our passionate team of experts carefully curates the best card content, so you can focus only on what truly matters."
+}
+const card2 = {
+    img:"./ytstudnt.jpg",
+    heading:"Top Educational Picks",
+    desc:"Learn from top educators and thought leaders through a thoughtfully curated list of impactful videos."
+}
+const card3 = {
+    img:"./quiz.jpg",
+    heading:"Inspiring Creators",
+    desc:"Discover rising stars and creative storytellers whose content will inspire and entertain you."
+}
 
 const Herosection = () => {
     return (
@@ -59,39 +76,14 @@ const Herosection = () => {
                 </svg>
             </div>
             <div className="post-hero-section">
+                <Blob/>
                 <h1 className="what-we-do">What we do?</h1>
                 <p className="tag">Learnio helps you ace your exam by using . . .</p>
                 <div className="cards-panel">
                 <div className="cards-panel">
-                    <div className="yt-card">
-                        <img src="./youtube.jpg" alt="" className="card-jpg" />
-                        <div className="card-text-area">
-                        <h1 className="best-handpicked-vdos">Best Handpicked Videos</h1>
-                        <p className="desc-para">
-                            Our passionate team of experts carefully curates the best card content, so you can focus only on what truly matters.
-                        </p>
-                        </div>
-                    </div>
-
-                    <div className="yt-card">
-                        <img src="./ytstudnt.jpg" alt="" className="card-jpg" />
-                        <div className="card-text-area">
-                        <h1 className="best-handpicked-vdos">Top Educational Picks</h1>
-                        <p className="desc-para">
-                            Learn from top educators and thought leaders through a thoughtfully curated list of impactful videos.
-                        </p>
-                        </div>
-                    </div>
-
-                    <div className="yt-card">
-                        <img src="./quiz.jpg" alt="" className="card-jpg" />
-                        <div className="card-text-area">
-                        <h1 className="best-handpicked-vdos">Inspiring Creators</h1>
-                        <p className="desc-para">
-                            Discover rising stars and creative storytellers whose content will inspire and entertain you.
-                        </p>
-                        </div>
-                    </div>
+                    <Card info={card1}/>
+                    <Card info={card2}/>
+                    <Card info={card3}/>
                     </div>
 
                 </div>
