@@ -1,7 +1,6 @@
 import React from "react";
 import './hero-section.css';
 import Card from "../Card/Card";
-import Blob from "../Blob/Blob";
 
 const card1 = {
     img:"./youtube.jpg",
