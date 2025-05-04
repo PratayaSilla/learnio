@@ -75,7 +75,6 @@ const Herosection = () => {
                 </svg>
             </div>
             <div className="post-hero-section">
-                <Blob/>
                 <h1 className="what-we-do">What we do?</h1>
                 <p className="tag">Learnio helps you ace your exam by using . . .</p>
                 <div className="cards-panel">
