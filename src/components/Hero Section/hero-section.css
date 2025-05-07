@@ -1,243 +1,209 @@
-.hero-container {
+.neo-hero {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-height: 90vh;
   background-color: #FFFBEB;
-  min-height: 100vh;
-}
-  .left-div{
-    display: flex;
-    flex-direction: column;
-    /* position: relative; */
-    /* top: 1rem; */
-    gap: 3rem;
-  }
-.welcome{
-    color: #000;
-    font-family: 'clash-display';
-    font-weight: 500;
-    font-size: 48px;
-}
-.learnio{
-    color: #B782FC;
-    font-size: 48px;
-    font-weight: 600;
-}
-.tagline{
-    color: #000;
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'clash-display';
-} 
-
-.button-spacer{
-    padding: 48px 52px;
-}
-.join-community-img{
-    height: 54px;
-    width: 116px;
-}
-.join-community{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 25px;
-}
-.last-tagline{
-    font-family: 'clash-display';
-    color: #000;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.right-div-img{
-    height: 703px;
-    width: 559px;
-}
-
-
-/* heavy hover button */
-.button {
-    line-height: 1;
-    text-decoration: none;
-    display: inline-flex;
-    border: none;
-    cursor: pointer;
-    align-items: center;
-    gap: 0.75rem;
-    background-color: var(--clr);
-    color: #fff;
-    border-radius: 10rem;
-    font-weight: 600;
-    padding: 0.75rem 1.5rem;
-    padding-left: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transition: background-color 0.3s;
-  }
-  
-  .button__icon-wrapper {
-    flex-shrink: 0;
-    width: 25px;
-    height: 25px;
-    position: relative;
-    color: var(--clr);
-    background-color: #fff;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-  }
-  
-  .button:hover {
-    background-color: #000;
-  }
-  
-  .button:hover .button__icon-wrapper {
-    color: #000;
-  }
-  
-  .button__icon-svg--copy {
-    position: absolute;
-    transform: translate(-150%, 150%);
-  }
-  
-  .button:hover .button__icon-svg:first-child {
-    transition: transform 0.3s ease-in-out;
-    transform: translate(150%, -150%);
-  }
-  
-  .button:hover .button__icon-svg--copy {
-    transition: transform 0.3s ease-in-out 0.1s;
-    transform: translate(0);
-  }
-
-/* heavy hover button */
-
-
-.scroll-to-explore {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: 'clash-display';
-  font-size: 20px;
-  color: black;
-  margin-top: 60px;
-}
-
-.get-started{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 1em 0em 1em 1em;
-        background-color: yellow;
-        cursor: pointer;
-        box-shadow: 4px 6px 0px black;
-        border: 4px solid;
-        border-radius: 15px;
-        position: relative;
-        overflow: hidden;
-        z-index: 100;
-        transition: box-shadow 250ms, transform 250ms, filter 50ms;
-        font-family: 'clash-display';
-        width: 395px;
-        height: 99px;
-        font-size: 30px;
-        font-weight: 600;
-}
-.get-started:hover {
-    transform: translate(2px, 2px);
-    box-shadow: 2px 3px 0px black;
-  }
-  .get-started:active {
-    transform: translate(4px, 4px);
-    box-shadow: 0px 0px 0px black;
-}
-
-.hero-content {
-  padding: 60px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1;
-  width: 100%;
-}
-.post-hero-section {
-  min-height: 100vh;
+  padding: 2rem 5%;
+  border-bottom: 8px solid #000;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'clash-display';
-  /* overflow: hidden;  */
-  /* background: url(../../../public/Post\ Hero\ Section.png) lightgray 50% / cover no-repeat;
-  width: 100%; */
-}
-
-.what-we-do {
-  font-size: 64px;
-  font-weight: 700;
-  color: #000;
-  margin-top: 123px; /* Adjust this based on the blob's position */
-}
-
-.tag {
-  font-size: 24px;
-  font-weight: 400;
-  margin-top: 60px;
-}
-
-.cards-panel {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; /* Controls the gap */
-  gap: 201px; /* Ensures fixed 201px space between cards */
-  padding: 40px;
-  flex-wrap: wrap; /* Makes it responsive if needed */
-}
-
-.yt-card {
-  width: 278px;
-  height: 420px;
-  border-radius: 12px;
-  border: 4px solid #000;
-  background: #FFF;
-  box-shadow: 6px 6px 0px 0px #000;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  box-sizing: border-box;
   overflow: hidden;
 }
 
-.card-jpg {
-  width: 250px;
-  height: 160px;
-  border-radius: 8px;
-  align-self: center;
-  margin: 16px auto 12px;
+
+.neo-hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
 }
 
-.card-text-area {
-  background-color: #fff; /* Match body color */
-  padding: 16px;
-  width: 100%;
-  box-sizing: border-box;
-  flex-grow: 1;
-}
-
-.best-handpicked-vdos {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0 0 8px 0;
-}
-
-.desc-para {
+.neo-hero-title {
+  display: block;
+  font-family: 'clash-display', sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1;
   color: #000;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin-bottom: 1rem;
+}
+
+.neo-hero-accent {
+  display: block;
+  font-family: 'clash-display', sans-serif;
+  font-size: 6.5rem;
+  font-weight: 800;
+  line-height: 0.9;
+  color: #B782FC;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  -webkit-text-stroke: 3px #000;
+  text-stroke: 3px #000;
+}
+
+.neo-hero-subtitle {
+  font-family: 'clash-display', sans-serif;
+  font-size: 1.8rem;
+  max-width: 600px;
+  margin: 2rem 0;
+  color: #000;
+}
+
+.neo-highlight {
+  background-color: yellow;
+  padding: 0 0.5rem;
+  box-shadow: 4px 4px 0 #000;
+}
+
+
+.neo-hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.neo-btn {
+  font-family: 'clash-display', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: 4px solid #000;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.neo-btn-primary {
+  background-color: #B782FC;
+  box-shadow: 8px 8px 0 #000;
+}
+
+.neo-btn-secondary {
+  background-color: #FFFBEB;
+  box-shadow: 8px 8px 0 #000;
+}
+
+.neo-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 6px 6px 0 #000;
+}
+
+.neo-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: 4px 4px 0 #000;
+}
+
+.neo-arrow {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+
+.neo-hero-stats {
+  display: flex;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.neo-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.neo-stat-number {
+  font-family: 'clash-display', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
+  line-height: 1;
+}
+
+.neo-stat-label {
+  font-family: 'clash-display', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.neo-hero-graphic {
+  position: relative;
+  width: 40%;
+  min-height: 100%;
+}
+
+.neo-graphic-main {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background-color: yellow;
+  border: 8px solid #000;
+  top: -10%;
+  right: -20%;
+  transform: rotate(8deg);
+  z-index: 1;
+}
+
+.neo-graphic-accent {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: #B782FC;
+  border: 8px solid #000;
+  bottom: -10%;
+  right: -10%;
+  transform: rotate(-5deg);
+  z-index: 2;
+}
+
+.neo-graphic-dots {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(#000 15%, transparent 15%);
+  background-size: 20px 20px;
+  top: 20%;
+  right: 10%;
+  z-index: 3;
+  opacity: 0.3;
+}
+
+
+@media (max-width: 1200px) {
+  .neo-hero-title {
+    font-size: 4rem;
+  }
+  .neo-hero-accent {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .neo-hero {
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 4rem;
+  }
+  .neo-hero-graphic {
+    width: 100%;
+    height: 300px;
+    margin-top: 3rem;
+  order: -1;
+  }
+  .neo-hero-title {
+    font-size: 3rem;
+  }
+  .neo-hero-accent {
+    font-size: 3.5rem;
+  }
+  .neo-hero-buttons {
+    flex-direction: column;
+  }
 }
