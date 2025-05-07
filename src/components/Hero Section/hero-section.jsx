@@ -4,7 +4,6 @@ import './hero-section.css';
 const Herosection = () => {
   return (
     <div className="neo-hero">
-      {/* Left Content */}
       <div className="neo-hero-content">
         <h1>
           <span className="neo-hero-title">CRUSH YOUR EXAMS</span>
@@ -39,8 +38,6 @@ const Herosection = () => {
           </div>
         </div>
       </div>
-
-      {/* Right Graphic */}
       <div className="neo-hero-graphic">
         <div className="neo-graphic-main"></div>
         <div className="neo-graphic-accent"></div>
