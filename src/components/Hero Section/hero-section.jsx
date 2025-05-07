@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './hero-section.css';
 
 const Herosection = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate('/signup');
+  };
+
   return (
     <div className="neo-hero">
       <div className="neo-hero-content">
@@ -15,7 +22,7 @@ const Herosection = () => {
         </p>
 
         <div className="neo-hero-buttons">
-          <button className="neo-btn neo-btn-primary">
+          <button className="neo-btn neo-btn-primary" onClick={handleGetStarted}>
             GET STARTED <span className="neo-arrow">→</span>
           </button>
           <button className="neo-btn neo-btn-secondary">

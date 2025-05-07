@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './testimonials.css';
 
 const Testimonials = () => {
+  const navigate = useNavigate();
+
   const testimonials = [
     {
       id: 1,
@@ -38,7 +41,6 @@ const Testimonials = () => {
           <div className="neo-testimonials-divider"></div>
         </div>
 
-
         <div className="neo-testimonials-grid">
           {testimonials.map((testimonial) => (
             <div 
@@ -57,10 +59,9 @@ const Testimonials = () => {
           ))}
         </div>
 
-
         <div className="neo-testimonials-cta">
           <h3>READY TO TRANSFORM YOUR LEARNING?</h3>
-          <button className="neo-cta-button">
+          <button className="neo-cta-button" onClick={() => navigate('/signup')}>
             JOIN 10,000+ STUDENTS NOW <span className="neo-cta-arrow">↗</span>
           </button>
         </div>

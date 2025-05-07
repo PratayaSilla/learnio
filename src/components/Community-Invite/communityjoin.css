@@ -101,6 +101,11 @@
     opacity: 0.8;
   }
   
+  /* .neo-community-button:hover {
+    transform: translateY(-2px);
+    background: #your-hover-color;
+    transition: all 0.2s ease;
+  } */
 
   @media (max-width: 768px) {
     .neo-community-container {

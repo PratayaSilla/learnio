@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Pricing.css';
 
 const Pricing = () => {
+  const navigate = useNavigate();
+
   const plans = [
     {
       name: "Basic",
@@ -64,7 +67,7 @@ const Pricing = () => {
               "--accent-color": plan.accentColor,
               height: (plan.name === "Premium" || premiumCardHeight === null) ? "auto" : `${premiumCardHeight}px`
             }}
-            ref={plan.name === "Premium" ? premiumCardRef : null}  // Set ref only on Premium card
+            ref={plan.name === "Premium" ? premiumCardRef : null}
           >
             {plan.popular && <div className="popular-badge">Most Popular</div>}
             
@@ -78,7 +81,7 @@ const Pricing = () => {
               </ul>
             </div>
             
-            <button className="pricing-button">Get Started</button>
+            <button className="pricing-button" onClick={() => navigate('/signup')}>Get Started</button>
           </div>
         ))}
       </div>

@@ -1,24 +1,22 @@
-// import React from 'react'
-// import Navbar from './components/Navbar/navbar'
-// import Herosection from './components/Hero Section/hero-section'
-// import Pricing from './components/Pricing/pricing'
-// import About from './components/About/About'
-// import Testimonials from './components/Testimonials/Testimonials'
-// import CommunityJoin from './components/Community-Invite/communityjoin'
-// import Footer from './components/Footer/Footer'
+import React from 'react';
+import Navbar from '../components/Navbar/navbar';
+import Herosection from '../components/Hero Section/hero-section';
+import Pricing from '../components/Pricing/pricing';
+import Testimonials from '../components/Testimonials/Testimonials';
+import CommunityJoin from '../components/Community-Invite/communityjoin';
+import Footer from '../components/Footer/Footer';
 
-// function LandingPage() {
-//   return (
-//       <>
-//       <Navbar />
-//       <Herosection />
-//       <About />
-//       <Pricing />
-//       <Testimonials />
-//       <CommunityJoin />
-//       <Footer />
-//     </>
-//   )
-// }
+const LandingPage = () => {
+  return (
+    <div className="landing-page">
+      <Navbar />
+      <Herosection />
+      <Pricing />
+      <Testimonials />
+      <CommunityJoin />
+      <Footer />
+    </div>
+  );
+};
 
-// export default LandingPage
+export default LandingPage;

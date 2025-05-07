@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Changed from <a href="#">
 import './footer.css';
 
 const Footer = () => {
@@ -20,23 +21,20 @@ const Footer = () => {
             </div>
           </div>
 
-
           <div className="neo-footer-col">
             <h3 className="neo-footer-heading">NAVIGATE</h3>
-            <a href="#" className="neo-footer-link">Home</a>
-            <a href="#" className="neo-footer-link">Features</a>
-            <a href="#" className="neo-footer-link">Pricing</a>
-            <a href="#" className="neo-footer-link">Testimonials</a>
+            <Link to="/" className="neo-footer-link">Home</Link>
+            <Link to="/features" className="neo-footer-link">Features</Link>
+            <Link to="/pricing" className="neo-footer-link">Pricing</Link>
+            <Link to="/testimonials" className="neo-footer-link">Testimonials</Link>
           </div>
-
 
           <div className="neo-footer-col">
             <h3 className="neo-footer-heading">LEGAL</h3>
-            <a href="#" className="neo-footer-link">Terms</a>
-            <a href="#" className="neo-footer-link">Privacy</a>
-            <a href="#" className="neo-footer-link">Cookies</a>
+            <Link to="/terms" className="neo-footer-link">Terms</Link>
+            <Link to="/privacy" className="neo-footer-link">Privacy</Link>
+            <Link to="/cookies" className="neo-footer-link">Cookies</Link>
           </div>
-
 
           <div className="neo-footer-col">
             <h3 className="neo-footer-heading">CONTACT</h3>
@@ -44,7 +42,6 @@ const Footer = () => {
             <a href="tel:+11234567890" className="neo-footer-link">+1 (123) 456-7890</a>
           </div>
         </div>
-
 
         <div className="neo-footer-copyright">
           <p>© 2023 LEARNIO. ALL RIGHTS RESERVED.</p>
