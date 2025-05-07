@@ -1,0 +1,187 @@
+
+.neo-about {
+    background-color: #FFFBEB;
+    padding: 8rem 5%;
+    border-top: 8px solid #000;
+    border-bottom: 8px solid #000;
+  }
+  
+  .neo-about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  .neo-about-header {
+    margin-bottom: 6rem;
+    text-align: center;
+  }
+  
+  .neo-about-title {
+    font-family: 'clash-display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #B782FC;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+  
+  .neo-about-headline {
+    font-family: 'clash-display', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    word-spacing: 15px;
+    margin-bottom: 2rem;
+  }
+  
+  .neo-about-divider {
+    width: 120px;
+    height: 8px;
+    background-color: #000;
+    margin: 0 auto;
+  }
+  
+
+  .neo-about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-bottom: 8rem;
+  }
+  
+  .neo-feature-card {
+    border: 4px solid #000;
+    border-radius: 12px;
+    padding: 2.5rem;
+    background-color: #FFF;
+    box-shadow: 8px 8px 0 #000;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .neo-feature-card:hover {
+    transform: translate(4px, 4px);
+    box-shadow: 4px 4px 0 #000;
+  }
+  
+  .neo-feature-number {
+    font-family: 'clash-display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
+  .neo-feature-title {
+    font-family: 'clash-display', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  .neo-feature-desc {
+    font-family: 'clash-display', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 2rem;
+  }
+  
+  .neo-feature-underline {
+    width: 60px;
+    height: 6px;
+    background-color: #000;
+  }
+  
+
+  .neo-comparison {
+    margin-top: 8rem;
+  }
+  
+  .neo-comparison-title {
+    font-family: 'clash-display', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: -1px;
+  }
+  
+  .neo-comparison-grid {
+    background-color: #FFF;
+    border: 4px solid #000;
+    border-radius: 12px;
+    box-shadow: 8px 8px 0 #000;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .neo-comparison-header,
+  .neo-comparison-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-bottom: 4px solid #000;
+  }
+  
+  .neo-comparison-header {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'clash-display', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .neo-comparison-row:last-child {
+    border-bottom: none;
+  }
+  
+  .neo-comparison-option,
+  .neo-comparison-feature,
+  .neo-comparison-value {
+    padding: 1.5rem;
+    font-family: 'clash-display', sans-serif;
+    font-size: 1.1rem;
+  }
+  
+  .neo-comparison-option {
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .neo-comparison-feature {
+    font-weight: 600;
+    background-color: #FFF;
+    border-right: 4px solid #000;
+  }
+  
+  .neo-comparison-value {
+    text-align: center;
+    font-weight: 500;
+  }
+  
+
+  @media (max-width: 768px) {
+    .neo-about-headline {
+      font-size: 3rem;
+    }
+    
+    .neo-comparison-header,
+    .neo-comparison-row {
+      grid-template-columns: 1.5fr 1fr 1fr;
+    }
+    
+    .neo-comparison-option,
+    .neo-comparison-feature,
+    .neo-comparison-value {
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  }
