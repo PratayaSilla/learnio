@@ -7,18 +7,22 @@ import About from './components/About/About'
 import Testimonials from './components/Testimonials/Testimonials'
 import CommunityJoin from './components/Community-Invite/communityjoin'
 import Footer from './components/Footer/Footer'
+import SignUpPage from './Pages/AuthPage/SignUpPage/SignUpPage'
+import LoginPage from './Pages/AuthPage/LoginPage/LoginPage'
 
 function App() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Herosection />
       <About />
       <Pricing />
       <Testimonials />
       <CommunityJoin />
-      <Footer />
+      <Footer /> */}
+      <SignUpPage />
+      <LoginPage />
     </>
   )
 }
