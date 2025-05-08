@@ -18,7 +18,7 @@ const Pricing = () => {
     },
     {
       name: "Pro",
-      price: "$9.99",
+      price: "₹199",
       features: [
         "Access to 200+ videos",
         "Priority support",
@@ -30,7 +30,7 @@ const Pricing = () => {
     },
     {
       name: "Premium",
-      price: "$19.99",
+      price: "₹499",
       features: [
         "Unlimited access",
         "24/7 priority support",
