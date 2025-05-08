@@ -35,7 +35,6 @@
     transform: translate(2px, 2px);
     box-shadow: 2px 2px 0 #000;
   }
-  
 
   .signup-button {
     padding: 1.2rem;
@@ -45,6 +44,7 @@
     font-family: 'clash-display', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
+    color: #FFF;
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: 6px 6px 0 #000;

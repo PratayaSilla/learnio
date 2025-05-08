@@ -20,7 +20,7 @@ const Login = () => {
           type="password" 
           id="password" 
           className="form-input" 
-          placeholder="••••••••"
+          placeholder="type your password"
         />
       </div>
       

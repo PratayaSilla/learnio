@@ -21,7 +21,7 @@ const SignUp = () => {
           type="password" 
           id="password" 
           className="form-input" 
-          placeholder="••••••••"
+          placeholder="type password"
         />
       </div>
       
@@ -31,7 +31,7 @@ const SignUp = () => {
           type="password" 
           id="confirm-password" 
           className="form-input" 
-          placeholder="••••••••"
+          placeholder="re-type password"
         />
       </div>
       
