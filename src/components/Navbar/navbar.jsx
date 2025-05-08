@@ -15,7 +15,7 @@ const Navbar = () => {
                 <button className="nav-btn">Mentors</button>
 
                 {/* ✅ Routing button — already great */}
-                <Link to="/signup" className="Login-Signup">Join Now</Link>
+                <Link to="auth" className="Login-Signup">Join Now</Link>
             </div>
         </nav>
     );

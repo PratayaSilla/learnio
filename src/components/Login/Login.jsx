@@ -1,9 +1,20 @@
 import React from 'react';
 import './Login.css';
+import { NavLink } from 'react-router-dom';
 
-const Login = () => {
+const Login = ({ toggleForm }) => {
   return (
-    <form className="login-form">
+    <div className="login-page">
+    <div className="login-container">
+        <div className="login-graphic">
+          <div className="graphic-main"></div>
+          <div className="graphic-accent"></div> 
+        </div>
+        <div className="login-content">
+          <h1 className="login-title">WELCOME BACK TO <span className="text-accent">LEARNIO</span></h1>
+          <p className="login-subtitle">Continue your journey among 10,000+ students</p>
+
+          <form className="login-form" >
       <div className="form-group">
         <label htmlFor="email" className="form-label">EMAIL</label>
         <input 
@@ -28,15 +39,23 @@ const Login = () => {
         <label className="remember-me">
           <input type="checkbox" className="checkbox" />
           <span>Remember me</span>
-        </label>
+        </label> 
         <a href="/forgot-password" className="forgot-password">Forgot password?</a>
       </div>
       
-      <button type="submit" className="login-button">
+      <button type="submit" className="login-button"> 
         LOG IN <span className="arrow">→</span>
       </button>
     </form>
+
+          <p className="signup-redirect">
+            New here? <NavLink onClick={toggleForm} className="signup-link">Create account</NavLink>
+          </p>
+        </div> 
+      </div> 
+    
+    </div> 
   );
 };
 
-export default Login;
+export default Login;  
