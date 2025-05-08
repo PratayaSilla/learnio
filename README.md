@@ -1,12 +1,59 @@
-# React + Vite
+# 📚 Learnio - Student Learning Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Learnio**, an engaging and modern website built to help students join a thriving learning community, stay on top of their academics, and connect with like-minded learners.
 
-Currently, two official plugins are available:
+This site is built using **React.js** with a clean folder structure and modular components, making it easy to scale and maintain.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✨ Beautiful landing page with smooth sections:
+  - Hero Section
+  - About
+  - Pricing
+  - Testimonials
+  - Community Join
+- 🔐 Auth Pages:
+  - Signup page
+  - Login page
+- ⚙️ Component-based architecture
+- 💅 Fully styled using custom CSS modules
+
+  🛠️ Tech Stack
+React.js
+
+CSS (custom modules)
+
+React Router DOM (for navigation)
+
+🔄 Setup Instructions
+Clone the repo
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/learnio.git
+cd learnio
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Start the development server
+
+bash
+Copy
+Edit
+npm run dev
+Visit in browser
+
+arduino
+Copy
+Edit
+http://localhost:5173
+✍️ Author
+Prataya — BTech CS with AI, passionate about building real-world projects & improving as a full-stack dev + freelancer.
+
+
