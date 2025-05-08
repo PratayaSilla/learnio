@@ -1,0 +1,106 @@
+.dashboard-sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #FFFBEB;
+    border-right: 4px solid #000;
+    padding: 2rem;
+    position: fixed;
+    box-shadow: 8px 0 0 #000;
+  }
+
+  .sidebar-header {
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #000;
+  }
+  
+  .sidebar-title {
+    font-family: 'clash-display', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  
+  .text-accent {
+    color: #B782FC;
+    /* -webkit-text-stroke: 1px #000; */
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFD166;
+    border: 3px solid #000;
+  }
+  
+  .username {
+    font-family: 'clash-display', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  /* Navigation */
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3rem 0;
+  }
+  
+  .sidebar-nav li {
+    margin-bottom: 0.8rem;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 1rem;
+    font-family: 'clash-display', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    border: 3px solid #000;
+    background-color: #FFF;
+    transition: all 0.2s;
+  }
+  
+  .nav-link:hover {
+    transform: translate(4px, -4px);
+    box-shadow: -4px 4px 0 #000;
+  }
+  
+  .nav-link.active {
+    background-color: #B782FC;
+    box-shadow: -4px 4px 0 #000;
+  }
+  
+  /* Recent Activity */
+  .recent-activity {
+    border-top: 2px solid #000;
+    padding-top: 1.5rem;
+  }
+  
+  .activity-title {
+    font-family: 'clash-display', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .activity-item {
+    font-family: 'clash-display', sans-serif;
+    padding: 0.8rem 0;
+    border-bottom: 1px dashed #000;
+    list-style-type: '→ ';
+    padding-left: 0.5rem;
+  }

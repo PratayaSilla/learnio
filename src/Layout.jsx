@@ -12,7 +12,7 @@ function Layout() {
     <div>
       {showNavbar && <Navbar />} 
       <Outlet/>
-      {showFooter && <Footer/>}
+      {showFooter && <Footer />}
     </div>
   )
 }

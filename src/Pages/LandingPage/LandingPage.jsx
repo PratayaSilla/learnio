@@ -3,7 +3,10 @@ import Herosection from '../../components/Hero Section/hero-section';
 import Pricing from '../../components/Pricing/pricing';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import CommunityJoin from '../../components/Community-Invite/communityjoin';
-import Footer from '../../components/Footer/Footer';
+import ChooseCourses from '../../components/Choose-Courses/Choose-courses';
+import DashboardSidebar from '../../components/SignUp/Dashboard/Dashboard-Sidebar/Dashboard-Sidebar';
+import DashboardHome from '../../components/SignUp/Dashboard/Dashboard-Home/Dashboard-Home';
+
 
 const LandingPage = () => {
   return (
@@ -12,7 +15,9 @@ const LandingPage = () => {
       <Pricing />
       <Testimonials />
       <CommunityJoin />
-      <Footer />
+      {/* <ChooseCourses /> */}
+      {/* <DashboardSidebar />
+      <DashboardHome /> */}
     </div>
   );
 };
