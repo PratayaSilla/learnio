@@ -10,9 +10,9 @@ function Layout() {
 
   return (
     <div>
-      {showNavbar && <Navbar />} 
+      {/* {showNavbar && <Navbar />}  */}
       <Outlet/>
-      {showFooter && <Footer />}
+      {/* {showFooter && <Footer />} */}
     </div>
   )
 }

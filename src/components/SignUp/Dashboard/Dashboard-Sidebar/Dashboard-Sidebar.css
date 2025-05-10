@@ -26,7 +26,7 @@
   
   .text-accent {
     color: #B782FC;
-    /* -webkit-text-stroke: 1px #000; */
+    text-decoration: none;
   }
   
   .user-profile {
@@ -49,7 +49,7 @@
     text-transform: uppercase;
   }
   
-  /* Navigation */
+
   .sidebar-nav ul {
     list-style: none;
     padding: 0;
@@ -83,7 +83,7 @@
     box-shadow: -4px 4px 0 #000;
   }
   
-  /* Recent Activity */
+
   .recent-activity {
     border-top: 2px solid #000;
     padding-top: 1.5rem;

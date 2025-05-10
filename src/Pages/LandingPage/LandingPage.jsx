@@ -6,18 +6,23 @@ import CommunityJoin from '../../components/Community-Invite/communityjoin';
 import ChooseCourses from '../../components/Choose-Courses/Choose-courses';
 import DashboardSidebar from '../../components/SignUp/Dashboard/Dashboard-Sidebar/Dashboard-Sidebar';
 import DashboardHome from '../../components/SignUp/Dashboard/Dashboard-Home/Dashboard-Home';
+import DashboardChapters from '../../components/SignUp/Dashboard/Dashboard-Chapters/Dashboard-Chapters';
+import DashboardNotes from '../../components/SignUp/Dashboard/Dashboard-Notes/Dashboard-Notes';
 
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      <Herosection />
+      {/* <Herosection />
       <Pricing />
       <Testimonials />
-      <CommunityJoin />
-      {/* <ChooseCourses /> */}
-      {/* <DashboardSidebar />
-      <DashboardHome /> */}
+      <CommunityJoin /> */}
+      {/* <ChooseCourses />  */}
+      <DashboardSidebar />
+      <DashboardHome />
+      <DashboardChapters />
+      <DashboardNotes />
+
     </div>
   );
 };
