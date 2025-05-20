@@ -1,7 +1,9 @@
 import React from 'react';
 import './Dashboard-Home.css';
+import { useNavigate } from "react-router-dom";
 
 const DashboardHome = () => {
+  const navigate = useNavigate(); 
   const progressItems = [
     { course: 'Computer Science', progress: 65, color: '#B782FC' },
     { course: 'Mathematics', progress: 40, color: '#FFD166' },
@@ -25,7 +27,7 @@ const DashboardHome = () => {
           {progressItems.map((item, index) => (
             <div key={index} className="progress-card" style={{ '--accent-color': item.color }}>
               <h3>{item.course}</h3>
-              <div className="progress-bar">
+              <div className="home-progress-bar">
                 <div 
                   className="progress-fill" 
                   style={{ 
@@ -42,10 +44,10 @@ const DashboardHome = () => {
       <section className="quick-actions">
         <h2 className="section-title">QUICK ACTIONS</h2>
         <div className="action-buttons">
-          <button className="action-btn continue-btn">
+          <button className="action-btn continue-btn" onClick={() => navigate('?tab=chapters')}>
             CONTINUE LEARNING <span>→</span>
           </button>
-          <button className="action-btn quiz-btn">
+          <button className="action-btn quiz-btn" onClick={() => navigate('?tab=quizzes')}>
             PRACTICE QUIZ <span>↗</span>
           </button>
         </div>

@@ -5,6 +5,7 @@ import DashboardChapters from '../../components/SignUp/Dashboard/Dashboard-Chapt
 import DashboardNotes from '../../components/SignUp/Dashboard/Dashboard-Notes/Dashboard-Notes';
 import { useLocation } from 'react-router-dom';
 import { useState,useEffect } from 'react';
+import DashboardQuizzes from '../../components/SignUp/Dashboard/Dashboard-Quizzes/Dashboard-Quizzes';
 
 const DashboardPage = () => {
     const location = useLocation();
@@ -15,10 +16,8 @@ const DashboardPage = () => {
   }, [location]);
   return (
     <div className="dashboard-page">
-      {/* <ChooseCourses />  */}
       <DashboardSidebar />
-      {/* {tab === 'home' ? <DashboardHome /> : } */}
-      { tab === 'home' ? <DashboardHome /> : tab === 'chapters' ? <DashboardChapters /> : tab === 'notes' ? <DashboardNotes /> : <></>} 
+      { tab === 'home' ? <DashboardHome /> : tab === 'chapters' ? <DashboardChapters /> : tab === 'notes' ? <DashboardNotes /> : tab === 'quizzes' ? <DashboardQuizzes /> : <></> } 
     </div>
   );
 };

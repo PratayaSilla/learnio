@@ -64,6 +64,7 @@
   
   .progress-card {
     border: 3px solid #000;
+    border-radius: 12px;
     padding: 2rem;
     background-color: #FFF;
     box-shadow: 6px 6px 0 #000;
@@ -83,7 +84,7 @@
     text-transform: uppercase;
   }
   
-  .progress-bar {
+  .home-progress-bar {
     height: 20px;
     background-color: #f0f0f0;
     border: 2px solid #000;
@@ -116,6 +117,7 @@
     font-size: 1.2rem;
     text-transform: uppercase;
     border: 3px solid #000;
+    border-radius: 8px;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
@@ -150,6 +152,7 @@
   
   .quiz-card {
     border: 3px solid #000;
+    border-radius: 12px;
     padding: 1.5rem;
     background-color: #FFF;
     box-shadow: 5px 5px 0 #000;

@@ -2,7 +2,6 @@ import React from 'react';
 import './Dashboard-Notes.css';
 
 const DashboardNotes = () => {
-  // Sample data
   const noteCategories = [
     {
       id: 1,

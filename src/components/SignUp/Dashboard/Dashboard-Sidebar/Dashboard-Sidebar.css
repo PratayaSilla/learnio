@@ -70,6 +70,7 @@
     text-decoration: none;
     color: #000;
     border: 3px solid #000;
+    border-radius: 8px;
     background-color: #FFF;
     transition: all 0.2s;
   }
@@ -79,9 +80,10 @@
     box-shadow: -4px 4px 0 #000;
   }
   
-  .active {
+  .side-active {
     background-color: #B782FC;
     box-shadow: -4px 4px 0 #000;
+    transform: translate(4px, -4px);
   }
   
 

@@ -31,7 +31,7 @@ useEffect(() => {
             <NavLink
               to="?tab=home"
               end
-              className={`nav-link ${tab==="home" ? "active" : ""}`}
+              className={`nav-link ${tab==="home" ? "side-active" : ""}`}
               
             >
               DASHBOARD HOME
@@ -40,31 +40,29 @@ useEffect(() => {
           <li>
             <NavLink
               to="?tab=chapters"
-              className={`nav-link ${tab==="chapters" ? "active" : ""}`}
+              className={`nav-link ${tab==="chapters" ? "side-active" : ""}`}
               
             >
               CHAPTERS
             </NavLink>
           </li>
           <li>
-            {/* <NavLink
+            <NavLink
               to="?tab=notes"
-              className={({ isActive }) =>
-                `nav-link ${isActive ? "active" : ""}`
-              }
+              className={`nav-link ${tab==="notes" ? "side-active" : ""}`}
+              
             >
               NOTES
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/dashboard/quizzes"
-              className={({ isActive }) =>
-                `nav-link ${isActive ? "active" : ""}`
-              }
+              to="?tab=quizzes"
+              className={`nav-link ${tab==="quizzes" ? "side-active" : ""}`}
+
             >
               QUIZZES
-            </NavLink> */}
+            </NavLink>
           </li>
         </ul>
       </nav>

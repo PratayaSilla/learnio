@@ -5,6 +5,7 @@ import SignUp from './components/SignUp/SignUp'
 import DashboardPage from './Pages/Dashboard-Main/DashboardPage'
 import DashboardHome from './components/SignUp/Dashboard/Dashboard-Home/Dashboard-Home'
 import DashboardChapters from './components/SignUp/Dashboard/Dashboard-Chapters/Dashboard-Chapters'
+import QuizAttempt from './components/SignUp/Dashboard/Dashboard-Quizzes/QuizAttempt/QuizAttempt'
 
 function App() {
   return (
@@ -17,8 +18,7 @@ function App() {
             <Route path='/signup' element={<SignUp />} />
             <Route path='/login' element={<Login />} />
             <Route path='/dashboard' element={<DashboardPage />} />
-            {/* <Route path='/dashboard-home' element={<DashboardHome />} />
-            <Route path='/dashboard-chapters' element={<DashboardChapters />} /> */}
+            <Route path='/attemptquiz' element={<QuizAttempt />} />
 
         </Routes>
     </ BrowserRouter>
