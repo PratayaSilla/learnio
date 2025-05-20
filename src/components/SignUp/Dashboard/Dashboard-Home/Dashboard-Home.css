@@ -177,6 +177,7 @@
     background-color: #000;
     color: #FFF;
     border: none;
+    border-radius: 8px;
     font-family: 'clash-display', sans-serif;
     font-weight: 600;
     cursor: pointer;
