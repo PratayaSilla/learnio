@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Changed from <a href="#">
+import { useNavigate } from "react-router-dom";
 import './footer.css';
 
 const Footer = () => {
+  const navigate = useNavigate(); 
   return (
     <div className="neo-footer">
       <div className="neo-footer-container">
@@ -23,17 +24,17 @@ const Footer = () => {
 
           <div className="neo-footer-col">
             <h3 className="neo-footer-heading">NAVIGATE</h3>
-            <Link to="/" className="neo-footer-link">Home</Link>
-            <Link to="/features" className="neo-footer-link">Features</Link>
-            <Link to="/pricing" className="neo-footer-link">Pricing</Link>
-            <Link to="/testimonials" className="neo-footer-link">Testimonials</Link>
+            <a href='#' className="neo-footer-link" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>Home</a>
+            <a href='#' className="neo-footer-link" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>Features</a>
+            <a href='#' className="neo-footer-link" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>Pricing</a>
+            <a href='#' className="neo-footer-link" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>Testimonials</a>
           </div>
 
           <div className="neo-footer-col">
-            <h3 className="neo-footer-heading">LEGAL</h3>
-            <Link to="/terms" className="neo-footer-link">Terms</Link>
-            <Link to="/privacy" className="neo-footer-link">Privacy</Link>
-            <Link to="/cookies" className="neo-footer-link">Cookies</Link>
+            <h3 className="neo-footer-heading" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>LEGAL</h3>
+            <a href='#' className="neo-footer-link" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>Terms</a>
+            <a href='#' className="neo-footer-link" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>Privacy</a>
+            <a href='#' className="neo-footer-link" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>Cookies</a>
           </div>
 
           <div className="neo-footer-col">

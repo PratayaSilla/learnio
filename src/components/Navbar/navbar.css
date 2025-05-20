@@ -31,6 +31,9 @@
     color: #000;
     text-decoration: none;
     transition: all 0.5s;
+    border: none;
+    background-color: #FFFBEB;
+    cursor: pointer;
 }
 .logo:hover{
     color: #B782FC;
@@ -58,6 +61,7 @@
 .nav-btn:hover{
     color: #B782FC;
 }
+
 
 
 

@@ -1,13 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './hero-section.css';
+import { Navigate } from 'react-router-dom';
 
 const Herosection = () => {
   const navigate = useNavigate();
 
-  const handleGetStarted = () => {
-    navigate('/signup');
-  };
+  // const handleGetStarted = () => {
+  //   // navigate('/signup');
+  // };
 
   return (
     <div className="neo-hero">
@@ -22,7 +23,7 @@ const Herosection = () => {
         </p>
 
         <div className="neo-hero-buttons">
-          <button className="neo-btn neo-btn-primary" onClick={handleGetStarted}>
+          <button className="neo-btn neo-btn-primary" onClick={()=>navigate('/signup')}>
             GET STARTED <span className="neo-arrow">→</span>
           </button>
           <button className="neo-btn neo-btn-secondary">

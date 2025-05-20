@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Pricing.css';
 
 const Pricing = () => {
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
   const plans = [
     {

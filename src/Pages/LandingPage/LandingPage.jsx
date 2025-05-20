@@ -8,20 +8,24 @@ import DashboardSidebar from '../../components/SignUp/Dashboard/Dashboard-Sideba
 import DashboardHome from '../../components/SignUp/Dashboard/Dashboard-Home/Dashboard-Home';
 import DashboardChapters from '../../components/SignUp/Dashboard/Dashboard-Chapters/Dashboard-Chapters';
 import DashboardNotes from '../../components/SignUp/Dashboard/Dashboard-Notes/Dashboard-Notes';
+import Navbar from '../../components/Navbar/navbar';
+import Footer from '../../components/Footer/Footer';
 
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      {/* <Herosection />
+      <Navbar />
+      <Herosection />
       <Pricing />
       <Testimonials />
-      <CommunityJoin /> */}
+      <CommunityJoin />
+      <Footer />
       {/* <ChooseCourses />  */}
-      <DashboardSidebar />
+      {/* <DashboardSidebar />
       <DashboardHome />
       <DashboardChapters />
-      <DashboardNotes />
+      <DashboardNotes /> */}
 
     </div>
   );

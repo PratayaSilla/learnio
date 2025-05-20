@@ -1,20 +1,20 @@
-import React from 'react'
-import { Outlet , useLocation} from 'react-router-dom'
-import Navbar from './components/Navbar/navbar';
-import Footer from './components/Footer/Footer';
+// import React from 'react'
+// // import { Outlet , useLocation} from 'react-router-dom'
+// import Navbar from './components/Navbar/navbar';
+// import Footer from './components/Footer/Footer';
 
-function Layout() {
-  const location = useLocation();
-  const showNavbar = location.pathname === "/";
-  const showFooter = location.pathname === "/";
+// function Layout() {
+//   // const location = useLocation();
+//   // const showNavbar = location.pathname === "/";
+//   // const showFooter = location.pathname === "/";
 
-  return (
-    <div>
-      {/* {showNavbar && <Navbar />}  */}
-      <Outlet/>
-      {/* {showFooter && <Footer />} */}
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       {/* {showNavbar && <Navbar />}  */}
+//       {/* <Outlet/> */}
+//       {/* {showFooter && <Footer />} */}
+//     </div>
+//   )
+// }
 
-export default Layout  
+// export default Layout  

@@ -1,8 +1,9 @@
 import React from 'react';
 import './SignUp.css';
-import { NavLink } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-const SignUp = ({ toggleForm }) => {
+const SignUp = () => {
+        const navigate = useNavigate(); 
   return (
 
     <div className="signup-page">
@@ -51,7 +52,7 @@ const SignUp = ({ toggleForm }) => {
         </button>
         
         <p className="login-redirect">
-          Already have an account? <NavLink onClick={toggleForm} className="login-link">Log in</NavLink>
+          Already have an account? <p onClick={()=>navigate('/login')} className="login-link" style={{cursor : 'pointer'}}>Log in</p>
         </p>
   
             </form>

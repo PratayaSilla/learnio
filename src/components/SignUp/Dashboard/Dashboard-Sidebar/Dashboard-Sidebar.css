@@ -59,6 +59,7 @@
   .sidebar-nav li {
     margin-bottom: 0.8rem;
   }
+
   
   .nav-link {
     display: block;
@@ -78,7 +79,7 @@
     box-shadow: -4px 4px 0 #000;
   }
   
-  .nav-link.active {
+  .active {
     background-color: #B782FC;
     box-shadow: -4px 4px 0 #000;
   }

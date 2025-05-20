@@ -1,13 +1,23 @@
-import React from 'react';
+import React from "react";
 import { NavLink } from 'react-router-dom';
-import './Dashboard-Sidebar.css';
+import "./Dashboard-Sidebar.css";
+import { useLocation, Link } from "react-router-dom";
+import { useEffect,useState } from "react";
 
 const DashboardSidebar = () => {
+  const location = useLocation();
+  const [tab, setTab] = useState(null);
+useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    setTab(params.get('tab'));
+    console.log(params.get('tab'))
+  }, [location]);
   return (
     <aside className="dashboard-sidebar">
-
       <div className="sidebar-header">
-        <h2 className="sidebar-title">WELCOME TO YOUR <span className="text-accent">DASHBOARD</span></h2>
+        <h2 className="sidebar-title">
+          WELCOME TO YOUR <span className="text-accent">DASHBOARD</span>
+        </h2>
         <div className="user-profile">
           <div className="user-avatar"></div>
           <span className="username">Prataya</span>
@@ -18,45 +28,43 @@ const DashboardSidebar = () => {
       <nav className="sidebar-nav">
         <ul>
           <li>
-            <NavLink 
-              to="/dashboard" 
+            <NavLink
+              to="?tab=home"
               end
-              className={({ isActive }) => 
-                `nav-link ${isActive ? 'active' : ''}`
-              }
+              className={`nav-link ${tab==="home" ? "active" : ""}`}
+              
             >
               DASHBOARD HOME
             </NavLink>
           </li>
           <li>
-            <NavLink 
-              to="/dashboard/chapters" 
-              className={({ isActive }) => 
-                `nav-link ${isActive ? 'active' : ''}`
-              }
+            <NavLink
+              to="?tab=chapters"
+              className={`nav-link ${tab==="chapters" ? "active" : ""}`}
+              
             >
               CHAPTERS
             </NavLink>
           </li>
           <li>
-            <NavLink 
-              to="/dashboard/notes" 
-              className={({ isActive }) => 
-                `nav-link ${isActive ? 'active' : ''}`
+            {/* <NavLink
+              to="?tab=notes"
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active" : ""}`
               }
             >
               NOTES
             </NavLink>
           </li>
           <li>
-            <NavLink 
-              to="/dashboard/quizzes" 
-              className={({ isActive }) => 
-                `nav-link ${isActive ? 'active' : ''}`
+            <NavLink
+              to="/dashboard/quizzes"
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active" : ""}`
               }
             >
               QUIZZES
-            </NavLink>
+            </NavLink> */}
           </li>
         </ul>
       </nav>

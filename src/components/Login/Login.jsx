@@ -1,8 +1,10 @@
 import React from 'react';
 import './Login.css';
-import { NavLink } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+// import { NavLink } from 'react-router-dom';
 
-const Login = ({ toggleForm }) => {
+const Login = () => {
+  const navigate = useNavigate();
   return (
     <div className="login-page">
     <div className="login-container">
@@ -43,14 +45,14 @@ const Login = ({ toggleForm }) => {
         <a href="/forgot-password" className="forgot-password">Forgot password?</a>
       </div>
       
-      <button type="submit" className="login-button"> 
+      <button type="submit" className="login-button" onClick={() => navigate('/dashboard')}> 
         LOG IN <span className="arrow">→</span>
       </button>
     </form>
 
-          <p className="signup-redirect">
+          {/* <p className="signup-redirect">
             New here? <NavLink onClick={toggleForm} className="signup-link">Create account</NavLink>
-          </p>
+          </p> */}
         </div> 
       </div> 
     

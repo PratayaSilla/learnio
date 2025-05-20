@@ -1,9 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';  // <-- ADD THIS IMPORT
+import { useNavigate } from 'react-router-dom';
 import './communityjoin.css';
 
 const CommunityJoin = () => {
-  const navigate = useNavigate();  // <-- ADD THIS HOOK
+  const navigate = useNavigate();  
 
   return (
     <div className="neo-community">
@@ -18,7 +18,7 @@ const CommunityJoin = () => {
           </p>
           <button 
             className="neo-community-button"
-            onClick={() => navigate('/signup')}  // <-- ADD THIS CLICK HANDLER
+            onClick={() => navigate('/signup')}  
           >
             GET INVITE <span className="neo-button-arrow">↗</span>
           </button>
