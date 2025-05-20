@@ -1,0 +1,22 @@
+.default-dashboard-message {
+  padding: 4rem;
+  flex: 1;
+  background-color: #FFFBEB;
+  color: #333;
+  font-family: 'clash-display', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.default-dashboard-message h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.default-dashboard-message p {
+  font-size: 1.2rem;
+  color: #555;
+}

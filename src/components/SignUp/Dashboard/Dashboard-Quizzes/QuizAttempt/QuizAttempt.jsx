@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // ✅ Import this
 import './QuizAttempt.css';
-import DashboardHome from '../../Dashboard-Home/Dashboard-Home';
-import DashboardPage from '../../../../../Pages/Dashboard-Main/DashboardPage';
 
 const questionsData = [
   {
@@ -29,7 +28,7 @@ const questionsData = [
 const QuizAttempt = () => {
   const [answers, setAnswers] = useState({});
   const [reviewFlags, setReviewFlags] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const navigate = useNavigate(); // ✅ Hook for programmatic navigation
 
   const handleOptionSelect = (questionId, option) => {
     setAnswers((prev) => ({ ...prev, [questionId]: option }));
@@ -46,13 +45,10 @@ const QuizAttempt = () => {
     console.log("Submitted answers:", answers);
     console.log("Marked for review:", reviewFlags);
     alert("Quiz submitted!");
-    setIsSubmitted(true);
+    
+    // ✅ Navigate to correct dashboard route with tab=home
+    navigate('/dashboard?tab=home');
   };
-
-  // After submission, redirect to DashboardHome
-  if (isSubmitted) {
-    return <DashboardPage />;
-  }
 
   return (
     <div className="quiz-attempt-container">

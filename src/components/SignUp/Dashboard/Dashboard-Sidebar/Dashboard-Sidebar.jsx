@@ -20,7 +20,7 @@ useEffect(() => {
         </h2>
         <div className="user-profile">
           <div className="user-avatar"></div>
-          <span className="username">Prataya</span>
+          <span className="username">User Profile</span>
         </div>
       </div>
 
@@ -67,7 +67,7 @@ useEffect(() => {
         </ul>
       </nav>
 
-      {/* Recent Activity */}
+
       <div className="recent-activity">
         <h3 className="activity-title">RECENT ACTIVITY</h3>
         <ul>
