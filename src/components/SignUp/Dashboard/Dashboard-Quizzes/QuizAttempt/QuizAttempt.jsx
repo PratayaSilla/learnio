@@ -28,7 +28,7 @@ const questionsData = [
 const QuizAttempt = () => {
   const [answers, setAnswers] = useState({});
   const [reviewFlags, setReviewFlags] = useState({});
-  const navigate = useNavigate(); // ✅ Hook for programmatic navigation
+  const navigate = useNavigate(); 
 
   const handleOptionSelect = (questionId, option) => {
     setAnswers((prev) => ({ ...prev, [questionId]: option }));
@@ -45,8 +45,7 @@ const QuizAttempt = () => {
     console.log("Submitted answers:", answers);
     console.log("Marked for review:", reviewFlags);
     alert("Quiz submitted!");
-    
-    // ✅ Navigate to correct dashboard route with tab=home
+
     navigate('/dashboard?tab=home');
   };
 

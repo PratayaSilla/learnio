@@ -1,8 +1,10 @@
 import React from 'react';
 import './Dashboard-Chapters.css';
+import { useNavigate } from "react-router-dom";
+
 
 const DashboardChapters = () => {
-  // Sample data
+  const navigate = useNavigate(); 
   const courses = [
     {
       id: 1,
@@ -60,7 +62,7 @@ const DashboardChapters = () => {
                     {chapter.completed ? '✓' : '→'}
                   </div>
                   <h3>{chapter.title}</h3>
-                  <button className="action-btn">
+                  <button className="action-btn" onClick={() => navigate('/chaptervideo')}>
                     {chapter.completed ? 'REVIEW' : 'START'}
                   </button>
                 </li>

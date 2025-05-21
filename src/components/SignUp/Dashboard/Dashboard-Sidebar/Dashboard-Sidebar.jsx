@@ -24,7 +24,7 @@ useEffect(() => {
         </div>
       </div>
 
-      {/* Navigation */}
+
       <nav className="sidebar-nav">
         <ul>
           <li>

@@ -47,7 +47,7 @@ const SignUp = () => {
           />
         </div>
         
-        <button type="submit" className="signup-button"> 
+        <button type="submit" className="signup-button" onClick={() => navigate('/choosecourses')}> 
           CREATE ACCOUNT <span className="arrow">→</span>
         </button>
         

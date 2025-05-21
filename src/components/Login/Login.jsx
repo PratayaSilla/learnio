@@ -50,9 +50,9 @@ const Login = () => {
       </button>
     </form>
 
-          {/* <p className="signup-redirect">
-            New here? <NavLink onClick={toggleForm} className="signup-link">Create account</NavLink>
-          </p> */}
+          <p className="signup-redirect">
+            New here? <p onClick={() => navigate('/signup')} className="signup-link" style={{cursor:'pointer'}}>Create account</p>
+          </p>
         </div> 
       </div> 
     

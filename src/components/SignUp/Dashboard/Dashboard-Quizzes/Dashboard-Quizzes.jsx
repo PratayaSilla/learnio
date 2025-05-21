@@ -3,6 +3,11 @@ import './Dashboard-Quizzes.css';
 import { useNavigate } from "react-router-dom";
 
 const DashboardQuizzes = () => {
+
+  const handleDeadClick = () => {
+  alert("Sorry, This feature hasn't been updated yet!");
+};
+
     const navigate = useNavigate(); 
   const quizzes = [
     {
@@ -43,17 +48,15 @@ const DashboardQuizzes = () => {
     }
   ];
 
-//   const handleQuizClick = (quizId) => {
-//     console.log("Navigating to quiz:", quizId);
-//   };
+
 
   return (
     <div className="dashboard-quizzes">
       <div className="dashboard-header">
         <h1 className="dashboard-title">My Quizzes</h1>
         <div className="dashboard-controls">
-          <button className="filter-button">Filter</button>
-          <button className="sort-button">Sort</button>
+          <button className="filter-button" onClick={handleDeadClick}>Filter</button>
+          <button className="sort-button" onClick={handleDeadClick}>Sort</button>
         </div>
       </div>
       

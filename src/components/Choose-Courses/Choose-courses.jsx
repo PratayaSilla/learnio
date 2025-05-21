@@ -1,7 +1,9 @@
 import React from 'react';
 import './Choose-courses.css';
+import { useNavigate } from "react-router-dom";
 
 const ChooseCourses = () => {
+  const navigate = useNavigate(); 
   const courses = [
     {
       id: 1,
@@ -12,7 +14,7 @@ const ChooseCourses = () => {
     {
       id: 2,
       title: "MEDICAL PREP",
-      description: "Ace your MCAT with curated video resources",
+      description: "Ace your NEET with curated video resources",
       accentColor: "#06D6A0"
     },
     {
@@ -45,7 +47,7 @@ const ChooseCourses = () => {
           >
             <h3 className="course-card-title">{course.title}</h3>
             <p className="course-card-desc">{course.description}</p>
-            <button className="course-card-button">
+            <button className="course-card-button" onClick={() => navigate('/dashboard')}>
               SELECT PATH <span className="button-arrow">→</span>
             </button>
             <div className="course-card-accent"></div>
