@@ -3,6 +3,9 @@ import './Dashboard-Home.css';
 import { useNavigate } from "react-router-dom";
 
 const DashboardHome = () => {
+      const handleDeadClick = () => {
+  alert("Sorry, This feature hasn't been updated yet!");
+};
   const navigate = useNavigate(); 
   const progressItems = [
     { course: 'Computer Science', progress: 65, color: '#B782FC' },
@@ -59,7 +62,7 @@ const DashboardHome = () => {
             <div key={index} className="quiz-card">
               <h3>{quiz.name}</h3>
               <p>Due: {quiz.date}</p>
-              <button className="study-btn">STUDY NOW</button>
+              <button className="study-btn" onClick={handleDeadClick}>STUDY NOW</button>
             </div>
           ))}
         </div>

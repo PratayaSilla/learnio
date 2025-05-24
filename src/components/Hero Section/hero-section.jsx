@@ -4,6 +4,9 @@ import './hero-section.css';
 import { Navigate } from 'react-router-dom';
 
 const Herosection = () => {
+        const handleDeadClick = () => {
+  alert("Sorry, We have not uploaded the demo yet !");
+};
   const navigate = useNavigate();
 
   return (
@@ -22,7 +25,7 @@ const Herosection = () => {
           <button className="neo-btn neo-btn-primary" onClick={()=>navigate('/signup')}>
             GET STARTED <span className="neo-arrow">→</span>
           </button>
-          <button className="neo-btn neo-btn-secondary">
+          <button className="neo-btn neo-btn-secondary" onClick={handleDeadClick}>
             WATCH DEMO <span className="neo-arrow">↗</span>
           </button>
         </div>

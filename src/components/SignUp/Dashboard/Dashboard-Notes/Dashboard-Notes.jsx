@@ -2,6 +2,9 @@ import React from 'react';
 import './Dashboard-Notes.css';
 
 const DashboardNotes = () => {
+    const handleDeadClick = () => {
+  alert("Sorry, This feature hasn't been updated yet!");
+};
   const noteCategories = [
     {
       id: 1,
@@ -26,7 +29,7 @@ const DashboardNotes = () => {
       <header className="notes-header">
         <h1>YOUR <span className="text-accent">KNOWLEDGE VAULT</span></h1>
         <div className="header-actions">
-          <button className="new-note-btn">
+          <button className="new-note-btn" onClick={handleDeadClick}>
             + NEW NOTE
           </button>
           <div className="search-bar">
@@ -49,8 +52,8 @@ const DashboardNotes = () => {
                   </div>
                   <p className="note-excerpt">{note.excerpt}</p>
                   <div className="note-actions">
-                    <button className="edit-btn">EDIT</button>
-                    <button className="review-btn">REVIEW</button>
+                    <button className="edit-btn" onClick={handleDeadClick}>EDIT</button>
+                    <button className="review-btn" onClick={handleDeadClick}>REVIEW</button>
                   </div>
                 </div>
               ))}
