@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // ✅ Import this
+import { useNavigate } from 'react-router-dom'; 
 import './QuizAttempt.css';
 
 const questionsData = [

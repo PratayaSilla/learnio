@@ -131,7 +131,6 @@ input[type="radio"] {
   accent-color: #B782FC;
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .quiz-attempt-container {
     margin-left: 0;

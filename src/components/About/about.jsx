@@ -5,16 +5,12 @@ const About = () => {
   return (
     <div className="neo-about">
       <div className="neo-about-container">
-        {/* Section Header */}
         <div className="neo-about-header">
           <h2 className="neo-about-title">SMARTER THAN RAW YOUTUBE</h2>
           <h1 className="neo-about-headline">WE SUPERCHARGE<br/>YOUR LEARNING</h1>
           <div className="neo-about-divider"></div>
         </div>
-
-        {/* Features Grid */}
         <div className="neo-about-features">
-          {/* Feature 1 */}
           <div className="neo-feature-card">
             <div className="neo-feature-number">01</div>
             <h3 className="neo-feature-title">Handpicked Videos</h3>
@@ -23,8 +19,6 @@ const About = () => {
             </p>
             <div className="neo-feature-underline" style={{ backgroundColor: '#B782FC' }}></div>
           </div>
-
-          {/* Feature 2 */}
           <div className="neo-feature-card">
             <div className="neo-feature-number">02</div>
             <h3 className="neo-feature-title">Smart Notes</h3>
@@ -34,7 +28,7 @@ const About = () => {
             <div className="neo-feature-underline" style={{ backgroundColor: '#FFD166' }}></div>
           </div>
 
-          {/* Feature 3 */}
+
           <div className="neo-feature-card">
             <div className="neo-feature-number">03</div>
             <h3 className="neo-feature-title">Targeted Quizzes</h3>
@@ -45,7 +39,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Comparison Table */}
+
         <div className="neo-comparison">
           <h2 className="neo-comparison-title">LEARNIO VS RAW YOUTUBE</h2>
           <div className="neo-comparison-grid">

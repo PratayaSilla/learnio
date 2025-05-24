@@ -6,10 +6,6 @@ import { Navigate } from 'react-router-dom';
 const Herosection = () => {
   const navigate = useNavigate();
 
-  // const handleGetStarted = () => {
-  //   // navigate('/signup');
-  // };
-
   return (
     <div className="neo-hero">
       <div className="neo-hero-content">

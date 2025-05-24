@@ -89,11 +89,6 @@
     font-size: 0.9rem;
     opacity: 0.7;
   }
-  /* .neo-footer-link:hover {
-    color: var(--accent-color);
-    transform: translateX(2px);
-  } */
-
   @media (max-width: 768px) {
     .neo-footer-grid {
       grid-template-columns: 1fr 1fr;

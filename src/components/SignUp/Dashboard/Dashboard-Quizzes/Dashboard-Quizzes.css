@@ -170,7 +170,6 @@
   font-size: 1rem;
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .dashboard-quizzes {
     margin-left: 0;
