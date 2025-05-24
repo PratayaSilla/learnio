@@ -1,0 +1,178 @@
+.mentors-container {
+    background-color: #FFFBEB;
+    padding: 60px 40px;
+    font-family: 'clash-display', sans-serif;
+    min-height: 100vh;
+}
+
+.back-button {
+    background-color: #FFF;
+    border: 3px solid #000;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'clash-display', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px 0px #000;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 40px;
+}
+
+.back-button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px #000;
+}
+
+.mentors-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.mentors-header h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.mentors-header p {
+    font-size: 22px;
+    color: #000;
+    font-weight: 500;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.mentors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.mentor-card {
+    border: 4px solid #000;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 10px 10px 0px 0px #000;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.mentor-card:hover {
+    transform: translate(5px, 5px);
+    box-shadow: 5px 5px 0px 0px #000;
+}
+
+.mentor-image-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    border-bottom: 4px solid #000;
+}
+
+.mentor-image-frame {
+    position: absolute;
+    inset: 0;
+    background-color: var(--accent-color);
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.mentor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    filter: grayscale(20%) contrast(110%);
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.mentor-card:hover .mentor-image {
+    transform: scale(1.05);
+    filter: grayscale(0%) contrast(100%);
+}
+
+.mentor-badge {
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px 0px #000;
+    transform: rotate(5deg);
+}
+
+.mentor-content {
+    padding: 25px;
+}
+
+.mentor-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.mentor-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mentor-button {
+    background: none;
+    border: none;
+    font-family: 'clash-display', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mentor-button:hover {
+    transform: translateX(5px);
+}
+
+.mentor-button::after {
+    content: "→";
+    transition: transform 0.2s;
+}
+
+.mentor-button:hover::after {
+    transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+    .mentors-header h1 {
+        font-size: 36px;
+    }
+    
+    .mentors-header p {
+        font-size: 18px;
+    }
+    
+    .mentors-grid {
+        grid-template-columns: 1fr;
+    }
+}

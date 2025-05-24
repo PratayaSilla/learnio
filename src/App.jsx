@@ -6,11 +6,15 @@ import DashboardPage from './Pages/Dashboard-Main/DashboardPage';
 import QuizAttempt from './components/SignUp/Dashboard/Dashboard-Quizzes/QuizAttempt/QuizAttempt';
 import ChooseCourses from './components/Choose-Courses/Choose-courses';
 import ChapterVideo from './components/SignUp/Dashboard/Dashboard-Chapters/ChapterVideo/ChapterVideo';
+import CoursesPage from './Pages/Courses/CoursesPage';
+import MentorsPage from './Pages/Mentors/MentorsPage';
 
 function App() {
   return (
     <Routes> 
       <Route path='/' element={<LandingPage />} />
+      <Route path='/courses' element={<CoursesPage />} />
+      <Route path='/mentors' element={<MentorsPage />} />
       <Route path='/signup' element={<SignUp />} />
       <Route path='/login' element={<Login />} />
       <Route path='/choosecourses' element={<ChooseCourses />} />

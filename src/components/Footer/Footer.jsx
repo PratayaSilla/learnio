@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import './Footer.css';
 
 const Footer = () => {
+          const handleDeadClick = () => {
+  alert("Sorry, We have not updated the links yet !");
+};
   const navigate = useNavigate(); 
   return (
     <div className="neo-footer">
@@ -16,9 +19,9 @@ const Footer = () => {
               The smartest way to study using YouTube. Curated videos, AI notes, and quizzes.
             </p>
             <div className="neo-footer-socials">
-              <a href="#" className="neo-social-link">TW</a>
-              <a href="#" className="neo-social-link">IG</a>
-              <a href="#" className="neo-social-link">DC</a>
+              <a href="#" className="neo-social-link" onClick={handleDeadClick}>TW</a>
+              <a href="#" className="neo-social-link" onClick={handleDeadClick}>IG</a>
+              <a href="#" className="neo-social-link" onClick={handleDeadClick}>DC</a>
             </div>
           </div>
 
@@ -31,10 +34,10 @@ const Footer = () => {
           </div>
 
           <div className="neo-footer-col">
-            <h3 className="neo-footer-heading" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>LEGAL</h3>
-            <a href='#' className="neo-footer-link" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>Terms</a>
-            <a href='#' className="neo-footer-link" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>Privacy</a>
-            <a href='#' className="neo-footer-link" onClick={()=>navigate('/')} style={{cursor: 'pointer'}}>Cookies</a>
+            <h3 className="neo-footer-heading" onClick={handleDeadClick} style={{cursor: 'pointer'}}>LEGAL</h3>
+            <a href='#' className="neo-footer-link" onClick={handleDeadClick} style={{cursor: 'pointer'}}>Terms</a>
+            <a href='#' className="neo-footer-link" onClick={handleDeadClick} style={{cursor: 'pointer'}}>Privacy</a>
+            <a href='#' className="neo-footer-link" onClick={handleDeadClick} style={{cursor: 'pointer'}}>Cookies</a>
           </div>
 
           <div className="neo-footer-col">
