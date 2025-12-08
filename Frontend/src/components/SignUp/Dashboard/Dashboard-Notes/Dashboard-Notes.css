@@ -1,6 +1,5 @@
-
 .dashboard-notes {
-  margin-left: 300px; 
+  margin-left: 300px;
   padding: 3rem;
   min-height: 100vh;
   background-color: #FFFBEB;
@@ -214,4 +213,173 @@
   .search-bar input {
     width: 100%;
   }
+}
+
+/* Delete Button */
+.delete-btn {
+  padding: 0.6rem 1.2rem;
+  font-family: 'clash-display', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #ef4444;
+  color: white;
+  box-shadow: 3px 3px 0 #000;
+}
+
+.delete-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #000;
+  background-color: #dc2626;
+}
+
+/* Loading & Empty States */
+.loading-state,
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  font-family: 'clash-display', sans-serif;
+  text-align: center;
+}
+
+.empty-state h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: #666;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 1rem;
+  border: 2px solid #dc2626;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-family: 'clash-display', sans-serif;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.modal-content {
+  background-color: #FFFBEB;
+  border: 4px solid #000;
+  border-radius: 16px;
+  box-shadow: 10px 10px 0 #000;
+  padding: 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-title {
+  font-family: 'clash-display', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.modal-content .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.modal-content label {
+  display: block;
+  font-family: 'clash-display', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-family: 'clash-display', sans-serif;
+  font-size: 1rem;
+  border: 3px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.modal-content textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+  outline: none;
+  box-shadow: 4px 4px 0 #B782FC;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.cancel-btn {
+  padding: 0.8rem 1.5rem;
+  font-family: 'clash-display', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 3px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.save-btn {
+  padding: 0.8rem 1.5rem;
+  font-family: 'clash-display', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #06D6A0;
+  border: 3px solid #000;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 #000;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.save-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #000;
+}
+
+.save-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }

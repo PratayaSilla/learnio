@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { useNavigate } from "react-router-dom";
+import { useAuth } from '../../context/AuthContext';
 
 const Login = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -24,36 +26,18 @@ const Login = () => {
     setError(null);
 
     try {
-      const response = await fetch('https://learnio-ya0q.onrender.com/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.message || 'Login failed');
-      }
-
-      // Store the token in localStorage
-      if (data.token) {
-        localStorage.setItem('token', data.token);
-      }
-
-      // Navigate to dashboard on success
-      navigate('/dashboard');
+      await login(formData);
+      navigate('/dashboard?tab=home');
     } catch (err) {
       setError(err.message);
     } finally {
       setLoading(false);
     }
   }
+
   return (
     <div className="login-page">
-    <div className="login-container">
+      <div className="login-container">
         <div className="login-graphic">
           <div className="graphic-main"></div>
           <div className="graphic-accent"></div> 
@@ -108,13 +92,12 @@ const Login = () => {
           </form>
 
           <p className="signup-redirect">
-            New here? <p onClick={() => navigate('/signup')} className="signup-link" style={{cursor:'pointer'}}>Create account</p>
+            New here? <span onClick={() => navigate('/signup')} className="signup-link" style={{cursor:'pointer'}}>Create account</span>
           </p>
         </div> 
       </div> 
-    
     </div> 
-    )
-  }
+  )
+}
 
 export default Login;

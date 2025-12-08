@@ -107,3 +107,40 @@
     list-style-type: '→ ';
     padding-left: 0.5rem;
   }
+
+  .user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #B782FC;
+    border: 3px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'clash-display', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+
+  .logout-btn {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-family: 'clash-display', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ef4444;
+    border: 3px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .logout-btn:hover {
+    transform: translate(4px, -4px);
+    box-shadow: -4px 4px 0 #000;
+    background-color: #dc2626;
+  }
