@@ -4,7 +4,7 @@ const prisma = require('../config/database');
 
 const generateAuthToken = (userId) => {
   return jwt.sign({ userId }, process.env.JWT_SECRET, { expiresIn: '7d' });
-};
+}; 
 
 const register = async (req, res) => {
   try {
@@ -40,7 +40,7 @@ const register = async (req, res) => {
       message: 'User registered successfully',
       user: userResponse,
       token
-    });
+    }); 
   } catch (error) {
     console.error('Registration error:', error);
     res.status(500).json({ message: 'Internal server error' });
@@ -92,7 +92,7 @@ const getProfile = async (req, res) => {
     console.error('Get profile error:', error);
     res.status(500).json({ message: 'Internal server error' });
   }
-};
+}; 
 
 module.exports = {
   register,

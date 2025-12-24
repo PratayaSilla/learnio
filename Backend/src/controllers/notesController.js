@@ -130,7 +130,7 @@ const deleteNote = async (req, res) => {
     }
 
     await prisma.note.delete({
-      where: { id }
+      where: { id:id }
     });
 
     res.json({

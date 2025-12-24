@@ -1,9 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import './communityjoin.css';
 
 const CommunityJoin = () => {
-  const navigate = useNavigate();  
+          const handleDeadClick = () => {
+  alert("Sorry, We have not created the Discord server yet !");
+};
+
 
   return (
     <div className="neo-community">
@@ -18,7 +20,7 @@ const CommunityJoin = () => {
           </p>
           <button 
             className="neo-community-button"
-            onClick={() => navigate('/signup')}  
+            onClick={handleDeadClick}  
           >
             GET INVITE <span className="neo-button-arrow">↗</span>
           </button>
